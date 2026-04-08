@@ -46,10 +46,10 @@ TRACESTAX_API_KEY=ts_live_your_key_here
 
 The package subscribes to Laravel's built-in queue events:
 
-- `JobProcessing` — records the start time
-- `JobProcessed` — sends a succeeded event with duration
-- `JobFailed` — sends a failed event with exception details
-- `Looping` — sends a worker heartbeat
+- `JobProcessing` - records the start time
+- `JobProcessed` - sends a succeeded event with duration
+- `JobFailed` - sends a failed event with exception details
+- `Looping` - sends a worker heartbeat
 
 Events are buffered in memory and flushed in batches via `register_shutdown_function` to avoid adding latency to your jobs.
 
