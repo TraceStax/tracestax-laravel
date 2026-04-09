@@ -472,7 +472,11 @@ class ResilienceTest extends TestCase
     {
         $this->silenceLog();
 
-        $client = new TraceStaxClient(apiKey: 'ts_test', enabled: true);
+        $client = new TraceStaxClient(
+            apiKey: 'ts_test',
+            endpoint: 'http://127.0.0.1:1',  // guaranteed refused - ensures transient failure so buffer accumulates
+            enabled: true,
+        );
         for ($i = 0; $i < 10_200; $i++) {
             $client->sendEvent(['type' => 'task_event', 'id' => "e{$i}"]);
         }
