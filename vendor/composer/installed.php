@@ -101,9 +101,9 @@
             'dev_requirement' => false,
         ),
         'illuminate/support' => array(
-            'pretty_version' => 'v13.4.0',
-            'version' => '13.4.0.0',
-            'reference' => 'e7ce0496cae80c3e1aa72e37f09335a6454846dc',
+            'pretty_version' => 'v13.6.0',
+            'version' => '13.6.0.0',
+            'reference' => '5394e4b6008175f5a42c1227b5c4b959aa1be963',
             'type' => 'library',
             'install_path' => __DIR__ . '/../illuminate/support',
             'aliases' => array(),
